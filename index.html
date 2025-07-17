@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Trading Mastery - Candlestick Chart Patterns Guide</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h2>Trading Mastery</h2>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Master Candlestick Chart Patterns</h1>
+                    <p>Learn the essential candlestick patterns that every successful trader needs to know. Transform your chart reading skills and boost your trading profits with this comprehensive guide!</p>
+                    <div class="hero-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>50+ Proven Patterns</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-eye"></i>
+                            <span>Visual Learning</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Quick Reference</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <button class="btn-primary" onclick="scrollToBook()">Get Your Copy Now</button>
+                        <button class="btn-secondary" onclick="scrollToPreview()">Preview Book</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="book-showcase" id="book-section">
+        <div class="container">
+            <div class="book-display">
+                <div class="book-images">
+                    <div class="main-book-image">
+                        <img src="assets/images/a.png" alt="Trading Book Cover" id="main-book-img">
+                    </div>
+                    <div class="book-thumbnails">
+                        <img src="assets/images/a.png" alt="Book Cover" class="thumbnail active" onclick="changeMainImage(this)">
+                        <img src="assets/images/b.png" alt="Book Page 1" class="thumbnail" onclick="changeMainImage(this)">
+                        <img src="assets/images/c.png" alt="Book Page 2" class="thumbnail" onclick="changeMainImage(this)">
+                        <img src="assets/images/d.png" alt="Book Page 3" class="thumbnail" onclick="changeMainImage(this)">
+                    </div>
+                </div>
+                
+                <div class="book-info">
+                    <h2>Candlestick Chart Patterns Guide</h2>
+                    <p class="book-subtitle">The Complete Visual Guide to Reading Market Emotions</p>
+                    <div class="book-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <span class="rating-text">5.0 (500+ traders) • Best Seller</span>
+                    </div>
+                    
+                    <div class="book-stats">
+                        <div class="stat">
+                            <strong>150+</strong>
+                            <span>Pages</span>
+                        </div>
+                        <div class="stat">
+                            <strong>50+</strong>
+                            <span>Patterns</span>
+                        </div>
+                        <div class="stat">
+                            <strong>100+</strong>
+                            <span>Examples</span>
+                        </div>
+                        <div class="stat">
+                            <strong>PDF</strong>
+                            <span>Format</span>
+                        </div>
+                    </div>
+                    
+                    <div class="book-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>50+ Essential Candlestick Patterns</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real Market Examples & Case Studies</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Reversal & Continuation Patterns</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Entry & Exit Signal Strategies</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Risk Management Techniques</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Quick Reference Cheat Sheet</span>
+                        </div>
+                    </div>
+                    
+                    <div class="price-section">
+                        <div class="price-badge">
+                            <i class="fas fa-fire"></i>
+                            <span>Limited Time Offer!</span>
+                        </div>
+                        <div class="price">
+                            <span class="original-price">₹299</span>
+                            <span class="current-price">₹48</span>
+                            <span class="discount">84% OFF</span>
+                        </div>
+                        <div class="price-details">
+                            <p class="price-note">⚡ Flash Sale - Only 100 copies left!</p>
+                            <p class="value-note">💰 Save ₹251 today</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-proof">
+                        <div class="recent-sales">
+                            <i class="fas fa-users"></i>
+                            <span>50+ people bought this in the last 24 hours</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-buy" onclick="initiatePayment()">
+                        <i class="fas fa-shopping-cart"></i>
+                        Buy Now - Instant Download
+                    </button>
+                    
+                    <div class="security-badges">
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-download"></i>
+                            <span>Instant Download</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Friendly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-benefits">
+        <div class="container">
+            <h2>Why Choose This Guide?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Learn from Experts</h3>
+                    <p>Written by professional traders with 15+ years of market experience. Get insights that only come from real trading floors.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-images"></i>
+                    </div>
+                    <h3>Visual Learning</h3>
+                    <p>Every pattern is explained with clear, colorful charts and real market examples. Perfect for visual learners.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Quick Results</h3>
+                    <p>Start recognizing profitable patterns within days. Our students report 60% improvement in trade accuracy.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Read on any device - phone, tablet, or computer. Perfect for studying while traveling or during market hours.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Lifetime Access</h3>
+                    <p>Download once, keep forever. No subscription fees, no expiration. Your personal trading reference for life.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time-Saving</h3>
+                    <p>Condensed years of learning into one comprehensive guide. Get straight to what works in real markets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="what-you-learn">
+        <div class="container">
+            <h2>What You'll Learn</h2>
+            <div class="learning-content">
+                <div class="learning-text">
+                    <div class="learning-item">
+                        <div class="item-number">1</div>
+                        <div class="item-content">
+                            <h3>Pattern Recognition</h3>
+                            <p>Master the art of instantly recognizing 50+ candlestick patterns including Doji, Hammer, Engulfing, and more.</p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="item-number">2</div>
+                        <div class="item-content">
+                            <h3>Market Psychology</h3>
+                            <p>Understand what each pattern reveals about market sentiment and trader emotions.</p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="item-number">3</div>
+                        <div class="item-content">
+                            <h3>Trading Strategies</h3>
+                            <p>Learn proven entry and exit strategies based on candlestick patterns with risk management rules.</p>
+                        </div>
+                    </div>
+                    <div class="learning-item">
+                        <div class="item-number">4</div>
+                        <div class="item-content">
+                            <h3>Real Examples</h3>
+                            <p>Study 100+ real market examples from stocks, forex, and crypto markets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="learning-image">
+                    <div class="preview-showcase">
+                        <img src="assets/images/a.png" alt="Book Preview">
+                        <div class="showcase-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Best Seller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book-preview" id="preview-section">
+        <div class="container">
+            <h2>Book Preview</h2>
+            <div class="preview-gallery">
+                <div class="preview-image">
+                    <img src="assets/images/e.png" alt="Book Preview 1">
+                </div>
+                <div class="preview-image">
+                    <img src="assets/images/f.png" alt="Book Preview 2">
+                </div>
+                <div class="preview-image">
+                    <img src="assets/images/g.png" alt="Book Preview 3">
+                </div>
+                <div class="preview-image">
+                    <img src="assets/images/h.png" alt="Book Preview 4">
+                </div>
+                <div class="preview-image">
+                    <img src="assets/images/i.png" alt="Book Preview 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Traders Are Saying</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"This guide made candlestick patterns so much easier to understand. Now I can spot reversal patterns with confidence!"</p>
+                        <div class="testimonial-author">
+                            <strong>Rahul Sharma</strong>
+                            <span>Professional Trader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Best resource for learning candlestick patterns. The visual examples are clear and practical for real trading."</p>
+                        <div class="testimonial-author">
+                            <strong>Priya Patel</strong>
+                            <span>Day Trader</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Simple, clear explanations of complex patterns. This guide improved my chart reading skills significantly."</p>
+                        <div class="testimonial-author">
+                            <strong>Amit Kumar</strong>
+                            <span>Swing Trader</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Trading Mastery</h3>
+                    <p>Your trusted source for candlestick patterns and trading education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Important Notice</h4>
+                    <p class="no-refund-policy">
+                        <strong>No Refund Policy:</strong> All sales are final. By purchasing this digital product, you agree that no refunds will be provided under any circumstances. Please ensure you want to proceed before making payment.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#" onclick="showTerms()">Terms of Service</a></li>
+                        <li><a href="#" onclick="showPrivacy()">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Trading Mastery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <span class="close" onclick="closePaymentModal()">&times;</span>
+            <h2>Complete Your Purchase</h2>
+            <div class="payment-summary">
+                <h3>Order Summary</h3>
+                <div class="summary-item">
+                    <span>Candlestick Chart Patterns Guide (PDF)</span>
+                    <span>₹48</span>
+                </div>
+                <div class="summary-savings">
+                    <span>You Save: ₹251 (84% OFF)</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total: ₹48</span>
+                </div>
+            </div>
+            <div id="payu-payment-container">
+                <!-- PayU payment form will be added here -->
+            </div>
+            <p class="payment-security">
+                <i class="fas fa-lock"></i>
+                Your payment is secured by PayU
+            </p>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Payment Successful!</h2>
+            <p>Thank you for your purchase. Your candlestick patterns guide is ready for download.</p>
+            <button class="btn-primary" onclick="downloadBook()">
+                <i class="fas fa-download"></i>
+                Download Your Guide
+            </button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
